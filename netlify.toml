@@ -1,0 +1,3 @@
+[build]
+  command = "rm -rf node_modules/.prisma && npx prisma generate && npm run build"
+  environment = { NETLIFY_PRISMA_DISABLE_CACHE = "true" }
